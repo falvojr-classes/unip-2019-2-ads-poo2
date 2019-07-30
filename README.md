@@ -3,7 +3,7 @@
 ## Objetivos
 
 + Aprofundar o estudo dos conceitos referentes à POO;
-+ Utilizar C# no desenvolvimento de aplicações em camadas, no acesso a dados e no desenvolvimento de relatórios;
++ Utilizar Java no desenvolvimento de aplicações em camadas, no acesso a dados e no desenvolvimento de relatórios;
 + Desenvolver a partir dos diagramas UML. 
 
 ## Conteúdo Programático
