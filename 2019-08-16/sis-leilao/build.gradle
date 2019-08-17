@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+	compile 'br.com.caelum.stella:caelum-stella-core:2.1.2'
+	
+	compileOnly 'org.projectlombok:lombok:1.18.8'
+	annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
+
+repositories {
+    jcenter()
+}
