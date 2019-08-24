@@ -1,5 +1,12 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Leilao {
 
 	private Leiloeiro leiloeiro;
@@ -15,6 +22,7 @@ public class Leilao {
 	public void iniciar() {
 		if (itens != null && !itens.isEmpty()) {
 			this.itemAtual = itens.remove(0);
+			this.itemAtual.setInicio(LocalDateTime.now());
 		} else {
 			System.err.println("Não existem mais itens para leilão.");
 		}
@@ -25,24 +33,24 @@ public class Leilao {
 	}
 	
 	public void finalizar() {
-		Lance vencedor = this.itemAtual.buscarLanceVencedor();
-		System.out.println(vencedor.getValor());
-	}
-	
-	public Leiloeiro getLeiloeiro() {
-		return leiloeiro;
-	}
-
-	public void setLeiloeiro(Leiloeiro leiloeiro) {
-		this.leiloeiro = leiloeiro;
+		this.itemAtual.setFim(LocalDateTime.now());
+		Lance lanceVencedor = this.itemAtual.buscarLanceVencedor();
+		if (lanceVencedor != null) {
+			imprimirRecibo(lanceVencedor);
+		} else {
+			System.err.println("O Item não teve lances válidos.");
+		}
 	}
 
-	public List<Item> getItens() {
-		return itens;
+	private void imprimirRecibo(Lance lanceVencedor) {
+		System.out.println("-----------CUPOM-----------");
+		System.out.println(String.format("Item: %s", this.itemAtual.getNome()));
+		
+		DateTimeFormatter formatterPtBr = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm:ss.SSS");
+		String inicio = this.itemAtual.getInicio().format(formatterPtBr);
+		String fim = this.itemAtual.getFim().format(formatterPtBr);
+		System.out.println(String.format("Intervalo: %s a %s", inicio, fim));
+		// Chama o toString da classe Lance implicitamente
+		System.out.println(lanceVencedor);
 	}
-
-	public void setItens(List<Item> itens) {
-		this.itens = itens;
-	}
-
 }
