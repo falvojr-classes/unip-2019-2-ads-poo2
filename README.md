@@ -23,7 +23,7 @@
 + Spring Framework
     + Spring Data `Grupo 3`
     + Spring Web (REST e RESTful) `Grupo 4`
-+ API `Grupo 4`
++ API `Grupo 5`
 
 #### Links Úteis
 
