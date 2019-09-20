@@ -16,6 +16,10 @@
 1. [Padrões de Projeto](https://docs.google.com/presentation/d/1OwGrJ9WbFkZ5xymjt-3UsyyI7OYfVHoLYxII9JpFl7k/edit?usp=sharing)
 1. [Frameworks e Bibliotecas](https://docs.google.com/presentation/d/1R8Mi7QUB3ZFghhAdQu1kfrXsjPaWnDhTCVEDu216K6M/edit?usp=sharing)
 
+## Trabalhos Preparatórios
+
++ [NP1](https://docs.google.com/document/d/1Cg6xI8KOxciEZwvDGOrBFPIeY9hl7HkVl_FTLnTS1vc/edit?usp=sharing)
+
 ### Seminários
 
 + Gradle `Grupo 1`
