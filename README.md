@@ -19,6 +19,7 @@
 ## Trabalhos Preparatórios
 
 + [NP1](https://docs.google.com/document/d/1Cg6xI8KOxciEZwvDGOrBFPIeY9hl7HkVl_FTLnTS1vc/edit?usp=sharing)
++ [NP2](https://docs.google.com/document/d/1KPI-BwbYFkpESC7qigLn4TbRAP_YNvx_p-oUhRAS_oc/edit?usp=sharing)
 
 ### Seminários
 
